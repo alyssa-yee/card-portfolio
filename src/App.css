@@ -1,38 +1,101 @@
 .App {
-  text-align: center;
+  width: 800px;
+  height: 400px;
+  perspective: 1000px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.flip-card{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Adjust shadow for darker effect */
+  border-radius: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.rotate-flip {
+  transform: rotateY(180deg);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Adjust shadow for darker effect */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flip-card-front, .flip-card-back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  font-size: 2rem;
+  border-radius: 30px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #92817a;
+  background-color: #6a5242;
+}
+
+.flip-card-front {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.flip-card-back {
+  color: white;
+  transform: rotateY(180deg);
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.profile-pic, .name, .links, .paragraph, .signature{
+  display: flex;
+  position: absolute;
+}
+
+.profile-pic{
+  bottom: 53%;
+  right: 77%;
+  width: 160px;
+  height: 160px;
+  background-color: white;
+  border-radius: 30px;
+}
+
+.name{
+  bottom: 76.58%;
+  left: 25%;
+  width: 565px;
+  height: 70px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.links{
+  bottom: 53%;
+  left: 25%;
+  width: 565px;
+  height: 80px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.paragraph{
+  bottom: 5%;
+  left: 2.5%;
+  width: 94.9%;
+  height: 40%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.signature{
+  bottom: 5%;
+  left: 2.5%;
+  width: 94.9%;
+  height: 90%;
+  /* background-color: white; */
+  border-radius: 10px;
+  background-image: url("signature.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 80%; /* Adjust the value to make the image smaller */
 }
