@@ -4,7 +4,7 @@ import { useState } from 'react';
 function App() {
   const [isFlipped, setIsFlipped] = useState(false); //default false
   const handleCardClick = () => {
-    setIsFlipped(!isFlipped); // not false => setIsFlipped state is set to true
+    setIsFlipped(!isFlipped); // not false => setIsFlipped state is set to true.
   };
 
   return (
