@@ -15,9 +15,9 @@ function App() {
         <div className='signature'></div>
         </div>
 
-        <div className = "flip-card-back">
+        <div className="flip-card-back">
           <div className='profile-pic'></div>
-          <div className='name'></div>
+          <div className='name-div'><text id='name'>ALYSSA YEE</text></div>
           <div className='links'></div>
           <div className='paragraph'></div>
         </div>

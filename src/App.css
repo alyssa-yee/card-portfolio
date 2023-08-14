@@ -45,7 +45,7 @@
   position: relative;
 }
 
-.profile-pic, .name, .links, .paragraph, .signature{
+.profile-pic, .name-div, .links, .paragraph, .signature{
   display: flex;
   position: absolute;
 }
@@ -55,17 +55,27 @@
   right: 77%;
   width: 160px;
   height: 160px;
-  background-color: white;
+  /* background-color: white; */
   border-radius: 30px;
+  background-image: url(profilepic.jpeg);
+  background-size: cover;
+  background-position: center;
 }
 
-.name{
+.name-div{
   bottom: 76.58%;
   left: 25%;
   width: 565px;
   height: 70px;
-  background-color: white;
+  /* background-color: white; */
   border-radius: 10px;
+}
+
+#name{
+  color: rgb(229, 213, 204);
+  letter-spacing: 2px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
 }
 
 .links{
