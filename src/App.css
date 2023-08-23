@@ -79,12 +79,28 @@
 }
 
 .links{
+  display: flex;
   bottom: 53%;
   left: 25%;
   width: 565px;
   height: 80px;
   background-color: white;
   border-radius: 10px;
+  column-count: 2;
+  column-gap: 10px; 
+}
+
+.info-div{
+  /* background-color: rgb(182, 182, 182); */
+}
+
+.info-text{
+  break-inside: avoid-column; /* Prevent splitting text within columns */
+  display: block;
+  margin-bottom: 0px;
+  color: black;
+  letter-spacing: 1px;
+  font-size: 15px;
 }
 
 .paragraph{
