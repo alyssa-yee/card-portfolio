@@ -26,13 +26,22 @@ function App() {
           <div className='name-div'><span id='name'>ALYSSA YEE</span></div>
 
           <div className='links'>
-            <div className='info-div'>
-            <span className='info-text'>alyssaqyee@outlook.com</span>
+            {/* <div className='info-div'>
             <span className='info-text'>(520)-208-7560</span>
-            </div>
+            </div> */}
             <div className='buttons-div'>
-            <button className='buttons' onClick={handleButtonClick}>test</button>
-            <button className='buttons' onClick={handleButtonClick}>test</button>
+            <span className='info-text'>(520)-208-7560</span>
+              <a href="https://github.com">
+              <i className="fab fa-github fa-lg" style={{ color: '#e8c091' }} onClick={handleButtonClick}></i>
+              </a>
+              <a href="https://linkedin.com">
+                <i class="fab fa-linkedin fa-lg" style={{ color: '#e8c091' }} onClick={handleButtonClick}></i> 
+              </a>
+              <a href="mailto:your@example.com">
+                <i class="far fa-envelope fa-lg" style={{ color: '#e8c091' }} onClick={handleButtonClick}></i> 
+              </a>
+              {/* <button className='buttons' onClick={handleButtonClick}>test</button> */}
+              {/* <button className='buttons' onClick={handleButtonClick}>test</button> */}
             </div>
           </div>
 
